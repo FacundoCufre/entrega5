@@ -11,12 +11,11 @@ class Contenedor{
             let dataParse = JSON.parse(data)
             if(dataParse.length){
                 await fs.promises.writeFile(this.ruta, JSON.stringify( [...dataParse, {...obj, id: dataParse.length+1}] , null, 2) )
-                
             }
             else{
                 await fs.promises.writeFile(this.ruta, JSON.stringify( [{...obj, id: dataParse.length+1}], null, 2) )
             }
-            return dataParse
+            console.log(dataParse)
         }
         catch(error){
             console.log(error)
@@ -36,7 +35,7 @@ class Contenedor{
             else{
                 console.log('error') 
             }
-            return dataParse
+            return (dataParse)
         }
         catch(error){
             console.log(error)
@@ -70,6 +69,7 @@ class Contenedor{
             else{
                 console.log(dataParse)
             }
+            return dataParse
         }
         catch(error){
             console.log(error )

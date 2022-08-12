@@ -1,0 +1,13 @@
+<ul>
+    <%= list.forEach(prod => { %>
+        <li>
+            <span><%= prod.title %></span>
+            <span><%= prod.price %></span>
+            <img <%= src= 'prod.thumbnail'; %> alt="" style="max-height: 50px;">
+        </li>
+    <% }); %>
+
+    
+</ul>
+
+<a href="/">Volver al formulario</a>

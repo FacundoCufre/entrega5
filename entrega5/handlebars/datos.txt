@@ -1,0 +1,8 @@
+[
+  {
+    "title": "heladera",
+    "price": 100000,
+    "thumbnail": "https://www.lg.com/ar/images/heladeras/md06176357/gallery/1100_1.jpg",
+    "id": 1
+  }
+]

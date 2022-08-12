@@ -1,0 +1,12 @@
+html 
+    head 
+        title='app con pug'
+    body 
+        form(action="/productos" method="POST")
+            input(type="text" name="title" placeholder="nombre del producto")
+            input(type="text" name="price" placeholder="precio")
+            input(type="text" name="thumbnail" placeholder="link imagen")
+            button(type="submit") subir producto
+
+
+a(href="/productos") Ver lista de productos
